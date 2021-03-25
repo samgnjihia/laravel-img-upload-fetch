@@ -39,7 +39,7 @@ class StoreImageController extends Controller
 
      return redirect()->back()->with('success', 'Image store in database successfully');
     }
-
+    //fetch
     function fetch_image($image_id)
     {
      $image = Images::findOrFail($image_id);
